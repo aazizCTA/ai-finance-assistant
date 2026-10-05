@@ -1,7 +1,7 @@
 [project]
 name = "ai-finance-assistant"
 version = "0.1.0"
-description = "Add your description here"
+description = "AI finance assistant using the Claude API, tool use and MCP"
 readme = "README.md"
 authors = [
     { name = "aazizCTA", email = "a.aziz@corecomtechacademy.co.uk" }
@@ -11,13 +11,13 @@ dependencies = [
     "anthropic>=1.11.0",
     "flask>=3.1.3",
     "mcp>=2.3.0",
-    "pytest>=9.1.1",
     "python-dotenv>=1.2.4",
 ]
 
-[project.scripts]
-ai-finance-assistant = "ai_finance_assistant:main"
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
 
-[build-system]
-requires = ["uv_build>=0.12.23,<0.13.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
