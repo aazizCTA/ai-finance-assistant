@@ -1,0 +1,14 @@
+# Secrets and local data
+.env
+finance.db
+
+# Virtual environment
+.venv/
+
+# Python cache / build files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
